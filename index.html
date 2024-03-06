@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <!-- Getting fonts -->
+  <!-- Barlow -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- Fraunces -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Sunnyside agency landing page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    body {
+      margin: 0;
+      display: grid;
+      place-content: center;
+      min-height: 100vh;
+      font-family: "Barlow", "Fraunces", "sans-serif";
+      font-size: 18px;
+      font-weight: 600;
+      /* align-content: center; */
+    }
+    .bigbox {
+      text-align: center;
+      /* align-items: center; */
+      display: flex;
+      justify-content: space-evenly;
+      flex-direction: column; 
+      /* padding: 16px 48px;; */
+    }
+    .heading {
+      color: hsl(210, 4%, 67%);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-family: "Fraunces";
+      font-weight: 700;
+      /* padding-bottom: 50px; */
+    }
+    .testimonials {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      /* display: flex; */
+      /* justify-content: space-around; */
+      /* padding: 16px 48px; */
+      /* align-items: center; */
+    }
+    .person {
+      padding: 16px 16px;;
+    }
+    
+    .images {
+      border-radius: 50%;
+      height: 75px;
+      margin-top: 40px;
+      margin-bottom: 40px;
+    }
+    .review {
+      color: hsl(255deg 2% 39.22%); 
+      line-height: 1.5;
+      text-align: center;
+      /* margin-top: 40px; */
+      margin-bottom: 58px;
+    }
+    .names {
+      font-weight: 900;
+      color: hsl(205.38deg 25.49% 20%);
+      font-family: "Fraunces";
+    }
+    .job {
+      color: hsl(0deg 0% 68.63%);
+    }
+    @media (min-width: 550px) {
+      
+    }
+
+    /* .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); } */
+
+  </style>
+</head>
+<body>
+  <section class = "bigbox">
+    <h4 class="heading">Client testimonials</h4>
+    <div class = "testimonials">
+      <div class = "person">
+        <img class = "images" src="./images/image-emily.jpg" alt="">
+        <p class = "review">We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
+        <p class = "names">Emily R.</p>
+        <p class = "job">Marketing Director</p>
+      </div>
+      <div class = "person">
+        <img class = "images" src="./images/image-thomas.jpg" alt="">
+        <p class = "review">Sunnyside's enthusiasm coupled with their keen interest in our brand's success made it a satisfying and enjoyable experience.</p>
+        <p class = "names">Thomas S.</p>
+        <p class = "job">Chief Operating Officer</p>
+      </div>
+      <div class = "person">
+        <img class= "images" src="./images/image-jennie.jpg" alt="">
+        <p class = "review">Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
+        <p class = "names">Jennie F.</p>
+        <p class = "job">Business Owner</p>
+      </div>
+    </div>  
+  </section>
+
+</body>
+</html>
